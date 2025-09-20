@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawhid Hasan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-900">
+    <!-- Navigation -->
+    <nav
+        class="bg-slate-900/90 backdrop-blur-md border-b border-blue-500/20 shadow-lg fixed w-full top-0 z-50 tech-grid">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#home" class="text-2xl font-bold text-green-400" style="font-family: 'Orbitron', monospace;">
+                    &lt;/Tawhid Hasan&gt;
+                </a>
+                <div class="hidden md:flex space-x-8" id="desktop-menu">
+                    <a href="#about"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[About]</a>
+                    <a href="#education"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Education]</a>
+                    <a href="#toolkit"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Toolkit]</a>
+                    <a href="#skills"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Skills]</a>
+                    <a href="#projects"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Projects]</a>
+                    <a href="#terminal"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Terminal]</a>
+                    <a href="#contact"
+                        class="text-blue-300 hover:text-green-400 transition duration-300 font-mono">[Contact]</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-green-400">
+                    <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[About]</a>
+            <a href="#education"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Education]</a>
+            <a href="#toolkit"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Toolkit]</a>
+            <a href="#skills"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Skills]</a>
+            <a href="#projects"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Projects]</a>
+            <a href="#terminal"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Terminal]</a>
+            <a href="#contact"
+                class="block py-2 px-4 text-sm text-blue-300 hover:text-green-400 hover:bg-slate-800">[Contact]</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white pt-16 relative">
+        <div class="absolute inset-0 tech-grid opacity-30"></div>
+        <div class="text-center px-4 relative z-10">
+            <div class="section-fade-in visible">
+                <div class="mb-8 robot-animation">
+                    <div class="text-8xl mb-4">🤖</div>
+                    <div class="text-green-400 font-mono text-sm">SYSTEM.ONLINE</div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6" style="font-family: 'Orbitron', monospace;">
+                    HELLO, I'M<br>
+                    <span class="typing-animation text-green-400" id="name-text">TAWHID</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-300 font-mono">
+                    &gt; Computer Science Engineering Student
+                </p>
+                <div class="bg-black/30 p-4 rounded-lg mb-12 max-w-3xl mx-auto border border-green-400/30">
+                    <p class="text-lg text-green-300 font-mono">
+                        who_am_i?<br>
+                        &gt; Passionate about algorithms, software architecture, and<br>
+                        &gt; creating innovative solutions through code.
+                    </p>
+                </div>
+                <div class="space-x-4">
+                    <a href="#projects"
+                        class="neon-glow bg-green-500/20 text-green-400 px-8 py-3 rounded font-mono font-semibold hover:bg-green-500/30 transition duration-300">
+                        ./view_projects.sh
+                    </a>
+                    <a href="#contact"
+                        class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded font-mono font-semibold hover:bg-blue-400/20 transition duration-300">
+                        connect --network
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 circuit-pattern opacity-20"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900 tech-grid">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">&lt;about_me /&gt;</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade-in">
+                    <div class="relative">
+                        <div
+                            class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-green-400/30 flex items-center justify-center circuit-pattern">
+                            <img src="tawhid_dp.jpg" alt="Tawhid Hasan"
+                                class="relative rounded-lg shadow-xl w-72 h-72 object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade-in">
+                    <div class="bg-slate-800/50 border border-green-400/20 rounded-lg p-6 backdrop-blur-sm">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-6 font-mono">
+                            $ cat developer_profile.txt
+                        </h3>
+                        <div class="space-y-4 text-blue-200 font-mono leading-relaxed">
+                            <p class="text-green-300">&gt; Hello! I'm Tawhid, a 3rd-year CSE student at North South
+                                University.</p>
+                            <p class="text-blue-300">&gt; My fascination with computing has grown into a deep passion
+                                for software engineering, system design, and algorithms.</p>
+                            <p class="text-purple-300">&gt; I combine logical programming with creative design skills to
+                                build innovative digital solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-900 circuit-pattern">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">&lt;education_history /&gt;</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in">
+                    <h3 class="text-xl font-bold text-green-400 font-mono">B.Sc. in CSE</h3>
+                    <p class="text-blue-300 font-mono">North South University</p>
+                    <p class="text-gray-400 font-mono text-sm">2023 - Present</p>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in">
+                    <h3 class="text-xl font-bold text-green-400 font-mono">HSC</h3>
+                    <p class="text-blue-300 font-mono">Dhaka College</p>
+                    <p class="text-gray-400 font-mono text-sm">Completed: 2021</p>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in">
+                    <h3 class="text-xl font-bold text-green-400 font-mono">SSC</h3>
+                    <p class="text-blue-300 font-mono">R.B. Govt High School</p>
+                    <p class="text-gray-400 font-mono text-sm">Completed: 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Toolkit Section -->
+    <section id="toolkit" class="py-20 bg-slate-900 tech-grid">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">&lt;my_toolkit /&gt;</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="file-code"
+                        class="w-16 h-16 mx-auto mb-4 text-blue-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">C++</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="file-code-2"
+                        class="w-16 h-16 mx-auto mb-4 text-gray-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">C</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="braces"
+                        class="w-16 h-16 mx-auto mb-4 text-green-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">Python</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="coffee"
+                        class="w-16 h-16 mx-auto mb-4 text-orange-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">Java</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="webhook"
+                        class="w-16 h-16 mx-auto mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">JavaScript</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="git-branch"
+                        class="w-16 h-16 mx-auto mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">Git</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="code"
+                        class="w-16 h-16 mx-auto mb-4 text-sky-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">VS Code</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="image"
+                        class="w-16 h-16 mx-auto mb-4 text-indigo-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">Photoshop</h3>
+                </div>
+                <div class="card-hover p-6 rounded-lg text-center section-fade-in"><i data-lucide="pen-tool"
+                        class="w-16 h-16 mx-auto mb-4 text-amber-400"></i>
+                    <h3 class="text-xl font-mono text-blue-300">Illustrator</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-800 circuit-pattern">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">skills.execute()</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="section-fade-in">
+                    <div class="bg-slate-900/80 border border-green-400/30 rounded-lg p-6 backdrop-blur-sm">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-8 text-center font-mono">
+                            &lt;languages_frameworks&gt;</h3>
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span
+                                        class="font-mono text-blue-300">C/C++</span><span
+                                        class="text-green-400 font-mono">90%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-blue-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-green-400 to-blue-400 h-full rounded neon-glow"
+                                        data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span
+                                        class="font-mono text-blue-300">Python</span><span
+                                        class="text-green-400 font-mono">20%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-blue-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-green-400 to-blue-400 h-full rounded"
+                                        data-width="20%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span
+                                        class="font-mono text-blue-300">Java</span><span
+                                        class="text-green-400 font-mono">80%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-blue-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-green-400 to-blue-400 h-full rounded"
+                                        data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span
+                                        class="font-mono text-blue-300">JavaScript</span><span
+                                        class="text-green-400 font-mono">75%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-blue-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-green-400 to-blue-400 h-full rounded"
+                                        data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade-in">
+                    <div class="bg-slate-900/80 border border-purple-400/30 rounded-lg p-6 backdrop-blur-sm">
+                        <h3 class="text-2xl font-semibold text-purple-400 mb-8 text-center font-mono">
+                            &lt;design_tools&gt;</h3>
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span class="font-mono text-blue-300">Adobe
+                                        Photoshop</span><span class="text-purple-400 font-mono">85%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-purple-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-purple-400 to-pink-400 h-full rounded"
+                                        data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2"><span class="font-mono text-blue-300">Adobe
+                                        Illustrator</span><span class="text-purple-400 font-mono">80%</span></div>
+                                <div class="w-full bg-slate-700 rounded h-3 border border-purple-400/20">
+                                    <div class="skill-bar bg-gradient-to-r from-purple-400 to-pink-400 h-full rounded"
+                                        data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900 tech-grid">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">projects.showcase()</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-hover section-fade-in rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-400 mb-3 font-mono">CGPA_Converter.js</h3>
+                        <p class="text-blue-200 mb-4 font-mono text-sm h-20">A web tool to convert CGPA scores between
+                            North South University and AIUB grading systems.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded border border-yellow-400/30 text-xs font-mono">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded border border-blue-400/30 text-xs font-mono">HTML</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://github.com/tawhid-88/CG_High" target="_blank"
+                                class="w-full text-center bg-gray-500/20 text-gray-300 py-2 rounded border border-gray-400/30 hover:bg-gray-500/30 transition duration-300 font-mono">view_source</a>
+                            <a href="https://tawhid-88.github.io/CG_High/" target="_blank"
+                                class="w-full text-center bg-green-500/20 text-green-400 py-2 rounded border border-green-400/30 hover:bg-green-500/30 transition duration-300 font-mono neon-glow">launch_tool</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-hover section-fade-in rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-400 mb-3 font-mono">HospitalSystem.java</h3>
+                        <p class="text-blue-200 mb-4 font-mono text-sm h-20">A comprehensive desktop application to
+                            manage patient data, appointments, and billing for a hospital.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded border border-orange-400/30 text-xs font-mono">Java</span>
+                            <span
+                                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded border border-purple-400/30 text-xs font-mono">Swing
+                                GUI</span>
+                        </div>
+                        <a href="https://github.com/tawhid-88/Hospital-management-system" target="_blank"
+                            class="w-full block text-center bg-purple-500/20 text-purple-400 py-2 rounded border border-purple-400/30 hover:bg-purple-500/30 transition duration-300 font-mono">view_source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section id="terminal" class="py-20 bg-slate-800 circuit-pattern">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">terminal.session()</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
+            </div>
+            <div id="terminal-window"
+                class="w-full h-96 bg-black/80 border-2 border-green-400/50 rounded-lg shadow-2xl shadow-green-500/10 section-fade-in overflow-hidden">
+                <div class="bg-slate-800 p-2 flex items-center border-b border-green-400/50">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="flex-grow text-center text-sm font-mono text-gray-400">bash -- tawhid-portfolio</div>
+                </div>
+                <div id="terminal-body" class="p-4 h-full overflow-y-auto font-mono text-sm">
+                    <div id="terminal-output"></div>
+                    <div class="flex items-center">
+                        <span class="text-green-400">visitor@tawhid-portfolio:~$</span>
+                        <input type="text" id="terminal-input"
+                            class="bg-transparent border-none text-white flex-grow ml-2 focus:outline-none" autofocus>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 tech-grid">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-400 mb-4 font-mono">contact.init()</h2>
+                <div class="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
+            </div>
+            <div class="bg-slate-900/80 border border-green-400/30 rounded-lg p-8 backdrop-blur-sm section-fade-in">
+                <div class="text-center">
+                    <p class="text-blue-300 text-lg font-mono mb-8">// My inbox is always open. Let's connect.</p>
+                    <a href="mailto:tawhidhasan88@gmail.com"
+                        class="neon-glow inline-block mb-10 bg-green-500/20 text-green-400 px-8 py-3 rounded font-mono font-semibold hover:bg-green-500/30 transition duration-300">
+                        send_mail --execute
+                    </a>
+                    <div class="flex justify-center items-center space-x-6">
+                        <a href="https://github.com/tawhid-88" target="_blank"
+                            class="text-blue-300 hover:text-green-400 transition-transform hover:scale-125"><i
+                                data-lucide="github" class="w-7 h-7"></i></a>
+                        <a href="https://www.facebook.com/tawhid.hasan.88/" target="_blank"
+                            class="text-blue-300 hover:text-green-400 transition-transform hover:scale-125"><i
+                                data-lucide="facebook" class="w-7 h-7"></i></a>
+                        <a href="https://www.instagram.com/hasan__tawhid/" target="_blank"
+                            class="text-blue-300 hover:text-green-400 transition-transform hover:scale-125"><i
+                                data-lucide="instagram" class="w-7 h-7"></i></a>
+                        <a href="https://wa.me/8801794948969" target="_blank"
+                            class="text-blue-300 hover:text-green-400 transition-transform hover:scale-125"><i
+                                data-lucide="message-square" class="w-7 h-7"></i></a>
+                        <a href="https://t.me/+8801794948969" target="_blank"
+                            class="text-blue-300 hover:text-green-400 transition-transform hover:scale-125"><i
+                                data-lucide="send" class="w-7 h-7"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-green-400/20 text-white py-8 circuit-pattern">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-blue-300 font-mono text-sm">
+                &copy; 2024 Tawhid Hasan | Built with &lt;passion&gt; &amp;&amp; code();
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
